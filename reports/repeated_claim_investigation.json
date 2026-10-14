@@ -1,0 +1,246 @@
+{
+  "counts": {
+    "repeated_claim_ids": 68,
+    "rows_in_repeated_groups": 136,
+    "different_segments": 68,
+    "different_start_dates": 68,
+    "different_payments": 58
+  },
+  "group_sizes": {
+    "2": 68
+  },
+  "segment_patterns": {
+    "1/2": 68
+  },
+  "examples": [
+    {
+      "claim_id": "196901176966106",
+      "rows": [
+        {
+          "DESYNPUF_ID": "064E6D7106A6AB4B",
+          "SEGMENT": "2",
+          "CLM_FROM_DT": "",
+          "CLM_THRU_DT": "",
+          "CLM_PMT_AMT": "11000.00"
+        },
+        {
+          "DESYNPUF_ID": "064E6D7106A6AB4B",
+          "SEGMENT": "1",
+          "CLM_FROM_DT": "20080707",
+          "CLM_THRU_DT": "20080715",
+          "CLM_PMT_AMT": "8000.00"
+        }
+      ],
+      "different_fields": [
+        "SEGMENT",
+        "CLM_FROM_DT",
+        "CLM_THRU_DT",
+        "CLM_PMT_AMT",
+        "NCH_PRMRY_PYR_CLM_PD_AMT",
+        "AT_PHYSN_NPI",
+        "OP_PHYSN_NPI",
+        "CLM_ADMSN_DT",
+        "ADMTNG_ICD9_DGNS_CD",
+        "CLM_UTLZTN_DAY_CNT",
+        "CLM_DRG_CD",
+        "ICD9_DGNS_CD_1",
+        "ICD9_DGNS_CD_2",
+        "ICD9_DGNS_CD_3",
+        "ICD9_DGNS_CD_4",
+        "ICD9_DGNS_CD_5",
+        "ICD9_DGNS_CD_6",
+        "ICD9_DGNS_CD_7",
+        "ICD9_DGNS_CD_8",
+        "ICD9_DGNS_CD_9",
+        "ICD9_PRCDR_CD_1"
+      ]
+    },
+    {
+      "claim_id": "196531176970382",
+      "rows": [
+        {
+          "DESYNPUF_ID": "094DCF21CB0EBFE7",
+          "SEGMENT": "2",
+          "CLM_FROM_DT": "",
+          "CLM_THRU_DT": "",
+          "CLM_PMT_AMT": "8000.00"
+        },
+        {
+          "DESYNPUF_ID": "094DCF21CB0EBFE7",
+          "SEGMENT": "1",
+          "CLM_FROM_DT": "20090124",
+          "CLM_THRU_DT": "20090228",
+          "CLM_PMT_AMT": "8000.00"
+        }
+      ],
+      "different_fields": [
+        "SEGMENT",
+        "CLM_FROM_DT",
+        "CLM_THRU_DT",
+        "PRVDR_NUM",
+        "AT_PHYSN_NPI",
+        "OP_PHYSN_NPI",
+        "ADMTNG_ICD9_DGNS_CD",
+        "CLM_UTLZTN_DAY_CNT",
+        "CLM_DRG_CD",
+        "ICD9_DGNS_CD_1",
+        "ICD9_DGNS_CD_2",
+        "ICD9_DGNS_CD_3",
+        "ICD9_DGNS_CD_4",
+        "ICD9_DGNS_CD_5",
+        "ICD9_DGNS_CD_6",
+        "ICD9_DGNS_CD_7",
+        "ICD9_DGNS_CD_8",
+        "ICD9_DGNS_CD_9",
+        "ICD9_PRCDR_CD_1",
+        "ICD9_PRCDR_CD_2",
+        "ICD9_PRCDR_CD_3",
+        "ICD9_PRCDR_CD_4",
+        "ICD9_PRCDR_CD_5",
+        "ICD9_PRCDR_CD_6"
+      ]
+    },
+    {
+      "claim_id": "196821176998887",
+      "rows": [
+        {
+          "DESYNPUF_ID": "0EEB3620D7B54C24",
+          "SEGMENT": "2",
+          "CLM_FROM_DT": "",
+          "CLM_THRU_DT": "",
+          "CLM_PMT_AMT": "42000.00"
+        },
+        {
+          "DESYNPUF_ID": "0EEB3620D7B54C24",
+          "SEGMENT": "1",
+          "CLM_FROM_DT": "20090821",
+          "CLM_THRU_DT": "20090916",
+          "CLM_PMT_AMT": "16000.00"
+        }
+      ],
+      "different_fields": [
+        "SEGMENT",
+        "CLM_FROM_DT",
+        "CLM_THRU_DT",
+        "PRVDR_NUM",
+        "CLM_PMT_AMT",
+        "AT_PHYSN_NPI",
+        "OP_PHYSN_NPI",
+        "OT_PHYSN_NPI",
+        "CLM_ADMSN_DT",
+        "CLM_PASS_THRU_PER_DIEM_AMT",
+        "CLM_UTLZTN_DAY_CNT",
+        "CLM_DRG_CD",
+        "ICD9_DGNS_CD_1",
+        "ICD9_DGNS_CD_2",
+        "ICD9_DGNS_CD_3",
+        "ICD9_DGNS_CD_4",
+        "ICD9_DGNS_CD_5",
+        "ICD9_DGNS_CD_6",
+        "ICD9_DGNS_CD_7",
+        "ICD9_DGNS_CD_8",
+        "ICD9_DGNS_CD_9",
+        "ICD9_PRCDR_CD_1",
+        "ICD9_PRCDR_CD_2",
+        "ICD9_PRCDR_CD_3",
+        "ICD9_PRCDR_CD_4",
+        "ICD9_PRCDR_CD_5",
+        "ICD9_PRCDR_CD_6"
+      ]
+    },
+    {
+      "claim_id": "196101177023665",
+      "rows": [
+        {
+          "DESYNPUF_ID": "1537674E8106621A",
+          "SEGMENT": "2",
+          "CLM_FROM_DT": "",
+          "CLM_THRU_DT": "",
+          "CLM_PMT_AMT": "12000.00"
+        },
+        {
+          "DESYNPUF_ID": "1537674E8106621A",
+          "SEGMENT": "1",
+          "CLM_FROM_DT": "20081211",
+          "CLM_THRU_DT": "20081223",
+          "CLM_PMT_AMT": "0.00"
+        }
+      ],
+      "different_fields": [
+        "SEGMENT",
+        "CLM_FROM_DT",
+        "CLM_THRU_DT",
+        "PRVDR_NUM",
+        "CLM_PMT_AMT",
+        "AT_PHYSN_NPI",
+        "OP_PHYSN_NPI",
+        "CLM_ADMSN_DT",
+        "ADMTNG_ICD9_DGNS_CD",
+        "NCH_BENE_IP_DDCTBL_AMT",
+        "CLM_UTLZTN_DAY_CNT",
+        "CLM_DRG_CD",
+        "ICD9_DGNS_CD_1",
+        "ICD9_DGNS_CD_2",
+        "ICD9_DGNS_CD_3",
+        "ICD9_DGNS_CD_4",
+        "ICD9_DGNS_CD_5",
+        "ICD9_DGNS_CD_6",
+        "ICD9_DGNS_CD_7",
+        "ICD9_DGNS_CD_8",
+        "ICD9_DGNS_CD_9",
+        "ICD9_DGNS_CD_10",
+        "ICD9_PRCDR_CD_1",
+        "ICD9_PRCDR_CD_2"
+      ]
+    },
+    {
+      "claim_id": "196231176993156",
+      "rows": [
+        {
+          "DESYNPUF_ID": "169529AFAE961F6D",
+          "SEGMENT": "2",
+          "CLM_FROM_DT": "",
+          "CLM_THRU_DT": "",
+          "CLM_PMT_AMT": "27000.00"
+        },
+        {
+          "DESYNPUF_ID": "169529AFAE961F6D",
+          "SEGMENT": "1",
+          "CLM_FROM_DT": "20080616",
+          "CLM_THRU_DT": "20080702",
+          "CLM_PMT_AMT": "24000.00"
+        }
+      ],
+      "different_fields": [
+        "SEGMENT",
+        "CLM_FROM_DT",
+        "CLM_THRU_DT",
+        "PRVDR_NUM",
+        "CLM_PMT_AMT",
+        "AT_PHYSN_NPI",
+        "OP_PHYSN_NPI",
+        "OT_PHYSN_NPI",
+        "CLM_ADMSN_DT",
+        "ADMTNG_ICD9_DGNS_CD",
+        "CLM_PASS_THRU_PER_DIEM_AMT",
+        "CLM_UTLZTN_DAY_CNT",
+        "CLM_DRG_CD",
+        "ICD9_DGNS_CD_1",
+        "ICD9_DGNS_CD_2",
+        "ICD9_DGNS_CD_3",
+        "ICD9_DGNS_CD_4",
+        "ICD9_DGNS_CD_5",
+        "ICD9_DGNS_CD_6",
+        "ICD9_DGNS_CD_7",
+        "ICD9_DGNS_CD_8",
+        "ICD9_DGNS_CD_9",
+        "ICD9_DGNS_CD_10",
+        "ICD9_PRCDR_CD_1",
+        "ICD9_PRCDR_CD_2",
+        "ICD9_PRCDR_CD_3",
+        "ICD9_PRCDR_CD_5",
+        "ICD9_PRCDR_CD_6"
+      ]
+    }
+  ]
+}

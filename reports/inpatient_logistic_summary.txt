@@ -1,0 +1,19 @@
+CMS DE-SynPUF synthetic beneficiary analysis, 2008
+Descriptive cross-sectional associations, not causal or clinical risk estimates
+Original records: 116352 Model complete cases: 116352 
+Model event count: 37780 
+Age computed as of 2008-12-31; years are approximate
+
+         variable odds_ratio ci_lower ci_upper  p_value
+1     (Intercept)      0.138    0.127    0.150 0.00e+00
+2        age_2008      1.003    1.002    1.004 1.61e-08
+3       sexcode_2      0.996    0.968    1.025 7.91e-01
+4 SP_DIABETES_yes      2.410    2.336    2.486 0.00e+00
+5      SP_CHF_yes      2.441    2.362    2.522 0.00e+00
+6     SP_COPD_yes      2.923    2.800    3.051 0.00e+00
+7 SP_CHRNKIDN_yes      2.773    2.663    2.888 0.00e+00
+
+Model AIC: 117414 
+
+Notes: 1=Yes/2=No for chronic condition flags; code_1 reference for sex.
+Odds ratios are adjusted for displayed covariates, not evidence of causation.

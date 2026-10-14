@@ -1,0 +1,8 @@
+"variable","odds_ratio","ci_lower","ci_upper","p_value"
+"(Intercept)",0.138,0.127,0.15,0
+"age_2008",1.003,1.002,1.004,1.61e-08
+"sexcode_2",0.996,0.968,1.025,0.791
+"SP_DIABETES_yes",2.41,2.336,2.486,0
+"SP_CHF_yes",2.441,2.362,2.522,0
+"SP_COPD_yes",2.923,2.8,3.051,0
+"SP_CHRNKIDN_yes",2.773,2.663,2.888,0

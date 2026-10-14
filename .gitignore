@@ -1,0 +1,11 @@
+.venv/
+.idea/
+.DS_Store
+__pycache__/
+*.pyc
+data/raw/
+data/processed/
+identifier.sqlite
+*.db
+*.db-shm
+*.db-wal

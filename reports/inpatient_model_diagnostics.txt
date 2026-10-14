@@ -1,0 +1,10 @@
+Exploratory diagnostics: claims-derived chronic flags, synthetic cohort
+Train n: 93081; test n: 23271
+Held-out AUC: 0.7833
+Held-out Brier score: 0.1657
+Test observed event rate: 0.3273
+Test mean predicted probability: 0.3264
+Null-model AIC (train): 117262.73
+Full-model AIC (train): 93854.90
+Interpretation restriction: Random holdout does not remove temporal leakage.
+Do not market this as prospective patient risk prediction.

@@ -9,3 +9,6 @@ identifier.sqlite
 *.db
 *.db-shm
 *.db-wal
+
+# Private learning notes
+reports/Recall_Learning_Record_*.md

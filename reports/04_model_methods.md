@@ -33,7 +33,7 @@ Which coded demographic and chronic-condition characteristics are statistically 
 
 These are *conditional descriptive associations* among synthetic records, not estimates of real clinical risk or effects. Because CMS chronic-condition flags may be constructed from underlying claims, the modeled predictors can overlap temporally or informationally with the inpatient claim outcome. **Do not interpret this cross-sectional model as prospective risk prediction or evidence that conditions cause utilization.** Check the source indicator definitions and study windows before adding claims about temporality.
 
-Additional limitations: no real-world representativeness from synthetic DE-SynPUF, possible unmeasured confounding, simplified age calculation, incomplete care utilization outside the loaded tables, no patient-level longitudinal validation, and no assessment yet of collinearity, calibration, discrimination, or model stability. Small p-values in a large synthetic dataset do not establish clinical importance.
+Additional limitations: no real-world representativeness from synthetic DE-SynPUF, possible unmeasured confounding, simplified age calculation, incomplete care utilization outside the loaded tables, no patient-level longitudinal validation, and no documented collinearity or model-stability/sensitivity analysis. A held-out discrimination and calibration check has since been completed, but it does not resolve information leakage. Small p-values in a large synthetic dataset do not establish clinical importance.
 
 ## Reproduction
 
@@ -47,4 +47,8 @@ Rscript scripts/06_model_visualization.R
 
 Outputs are `reports/inpatient_logistic_summary.txt`, `reports/inpatient_logistic_odds_ratios.csv`, and `reports/inpatient_adjusted_odds_ratios.png`.
 
-**Next methodological gate:** audit coding/provenance and assessment for leakage; then evaluate model adequacy and consider defensible alternatives.
+## Subsequently completed model diagnostics
+
+A seeded 80/20 random partition (seed `20261014`) was used for exploratory diagnostics (training n=93,081; held-out n=23,271). The held-out ROC AUC was **0.7833**, Brier score **0.1657**, observed event proportion **0.3273**, and mean predicted event proportion **0.3264**. Calibration-decile data and the calibration plot are saved under `reports/`. A random split does **not** eliminate claims-derived predictor leakage or establish prospective validity. The adjusted odds ratios above derive from the separate full-cohort exploratory model and are not the fitted train-only estimates.
+
+**Remaining methodological review:** verify indicator codebook and windows, assess information leakage and collinearity, check robustness to alternate predictors/designs, and attempt an independent clean-environment reproduction before making stronger claims.

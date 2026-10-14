@@ -41,11 +41,23 @@ How can raw segmented Medicare-style claims data be transformed into an auditabl
 
 See [model methods](reports/04_model_methods.md), `reports/inpatient_model_diagnostics.txt`, and saved visualization outputs.
 
+## Key interpretation
+
+In this synthetic sample, 37,780 of 116,352 beneficiaries (32.47%) had at least one distinct inpatient claim. Chronic-condition indicators were associated with inpatient claim status in an exploratory adjusted model, but the indicators may be claims-derived and overlap the outcome window. These associations do not establish causation, prospective prediction, or actual Medicare population rates.
+
 ## Reproduce locally
 
-Requires appropriately obtained CMS DE-SynPUF source files for the original database builder, plus Python 3 and R.
+Requires appropriately obtained **CMS DE-SynPUF Sample 1** 2008 Beneficiary Summary and 2008-2010 Inpatient Claims CSV files, Python 3, and base R with PNG graphics support. Place the original files under `data/raw/` using the filenames expected by `scripts/01_audit_raw_data.py` and `scripts/03_build_database.py`. Do not commit the source files.
 
-Once your SQLite file is built at `data/processed/healthcare_claims.db`:
+From the project root, first run the data audit, repeated-ID investigation, and database build:
+
+```bash
+python3 scripts/01_audit_raw_data.py
+python3 scripts/02_investigate_claim_ids.py
+python3 scripts/03_build_database.py
+```
+
+After SQLite is built at `data/processed/healthcare_claims.db`, run:
 
 ```bash
 python3 scripts/04_prepare_model_data.py
@@ -54,7 +66,7 @@ Rscript scripts/06_model_visualization.R
 Rscript scripts/07_model_diagnostics.R
 ```
 
-Original import and audit steps are under `scripts/01_...`, `02_...`, and `03_...`. Source-file assumptions and download instructions still need a complete reproducibility review; do not treat this as a one-command clean-room reproduction yet.
+Verify record counts against the table above. The repository excludes source data, so a fresh reproduction depends on retrieving the same CMS sample files. The commands are documented but have not been independently verified from a clean environment. See `reports/04_model_methods.md` for scope and limitations.
 
 ## Scope and limitations
 

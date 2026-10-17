@@ -9,6 +9,8 @@ identifier.sqlite
 *.db
 *.db-shm
 *.db-wal
+powerbi/local_data/
+*.pbix
 
 # Private learning notes
 reports/Recall_Learning_Record_*.md

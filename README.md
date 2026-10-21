@@ -41,6 +41,29 @@ How can raw segmented Medicare-style claims data be transformed into an auditabl
 
 See [model methods](reports/04_model_methods.md), `reports/inpatient_model_diagnostics.txt`, and saved visualization outputs.
 
+## Portfolio visualization: adjusted odds ratios and 95% confidence intervals
+
+The [reproducible forest-plot R script](scripts/19_publication_forest_plot.R) displays six adjusted associations with horizontal 95% confidence intervals and a reference line at an odds ratio of 1.00. The plotting inputs are available in the [verified values table](reports/inpatient_forest_plot_verified_values.csv), and the [model documentation](docs/INPATIENT_MODEL_PORTFOLIO_NOTE.md) specifies the outcome, adjustment variables, sample size, and limitations.
+
+| Predictor | Adjusted OR | 95% CI |
+|---|---:|---|
+| COPD | 2.923 | 2.800–3.051 |
+| CKD | 2.773 | 2.663–2.888 |
+| CHF | 2.441 | 2.362–2.522 |
+| Diabetes | 2.410 | 2.336–2.486 |
+| Age (per year) | 1.003 | 1.002–1.004 |
+| Female vs. Male | 0.996 | 0.968–1.025 |
+
+The female-versus-male interval contains 1.00. These estimates describe associations in synthetic data, not causal effects or prospective patient-risk predictions.
+
+From the repository root, regenerate the forest plot after reproducing the model outputs:
+
+```bash
+Rscript scripts/19_publication_forest_plot.R
+```
+
+This creates `reports/inpatient_forest_plot_portfolio.png`, `reports/inpatient_forest_plot_portfolio.pdf`, and `reports/inpatient_forest_plot_verified_values.csv`. The render step has not been independently re-executed during this publication update.
+
 ## Key interpretation
 
 In this synthetic sample, 37,780 of 116,352 beneficiaries (32.47%) had at least one distinct inpatient claim. Chronic-condition indicators were associated with inpatient claim status in an exploratory adjusted model, but the indicators may be claims-derived and overlap the outcome window. These associations do not establish causation, prospective prediction, or actual Medicare population rates.

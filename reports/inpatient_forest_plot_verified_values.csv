@@ -1,0 +1,7 @@
+"predictor","odds_ratio","ci_lower","ci_upper","display"
+"Chronic Obstructive Pulmonary Disease (COPD)",2.923,2.8,3.051,"2.923 (2.800-3.051)"
+"Chronic Kidney Disease (CKD)",2.773,2.663,2.888,"2.773 (2.663-2.888)"
+"Congestive Heart Failure (CHF)",2.441,2.362,2.522,"2.441 (2.362-2.522)"
+"Diabetes",2.41,2.336,2.486,"2.410 (2.336-2.486)"
+"Age (per year)",1.003,1.002,1.004,"1.003 (1.002-1.004)"
+"Female vs. Male (reference)",0.996,0.968,1.025,"0.996 (0.968-1.025)"

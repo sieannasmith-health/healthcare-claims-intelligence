@@ -43,6 +43,10 @@ See [model methods](reports/04_model_methods.md), `reports/inpatient_model_diagn
 
 ## Portfolio visualization: adjusted odds ratios and 95% confidence intervals
 
+![Adjusted odds ratio forest plot with 95% confidence intervals](reports/inpatient_forest_plot_portfolio.svg)
+
+*Forest plot based on the verified regression estimates for six predictors. Synthetic Medicare claims data; exploratory associations, not causal effects.*
+
 The [reproducible forest-plot R script](scripts/19_publication_forest_plot.R) displays six adjusted associations with horizontal 95% confidence intervals and a reference line at an odds ratio of 1.00. The plotting inputs are available in the [verified values table](reports/inpatient_forest_plot_verified_values.csv), and the [model documentation](docs/INPATIENT_MODEL_PORTFOLIO_NOTE.md) specifies the outcome, adjustment variables, sample size, and limitations.
 
 | Predictor | Adjusted OR | 95% CI |

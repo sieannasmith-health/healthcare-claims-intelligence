@@ -1,4 +1,4 @@
-# Medicare Claims & Hospital Utilization Analysis
+# Healthcare Claims Analytics
 
 **Independent health data analytics portfolio project**  
 **Dataset:** CMS DE-SynPUF synthetic Medicare claims (2008 beneficiary records and inpatient claim segments)  
